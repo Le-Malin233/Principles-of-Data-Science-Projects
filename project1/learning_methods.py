@@ -17,8 +17,8 @@ def apply_lle(X_train, X_test, dim, neighbors):
     lle = LocallyLinearEmbedding(
         n_components=dim,
         n_neighbors=neighbors,
-        method="standard",      # 改为 standard
-        eigen_solver="dense",   # 关键修复
+        method="standard",      
+        eigen_solver="dense",  
         reg=1e-3,               # 正则化
         n_jobs=-1
     )
